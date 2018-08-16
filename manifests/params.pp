@@ -7,9 +7,10 @@ class ansible::params {
   {
     'redhat':
     {
+      $include_epel=true
       case $::operatingsystemrelease
       {
-        /^[5-7].*$/:
+        /^[7].*$/:
         {
         }
         default: { fail("Unsupported RHEL/CentOS version! - ${::operatingsystemrelease}")  }
@@ -21,14 +22,12 @@ class ansible::params {
       {
         'Ubuntu':
         {
+          $include_epel=false
           case $::operatingsystemrelease
           {
-            /^14.*$/:
-            {
-            }
-            /^16.*$/:
-            {
-            }
+            # /^18.*$/:
+            # {
+            # }
             default: { fail("Unsupported Ubuntu version! - ${::operatingsystemrelease}")  }
           }
         }
