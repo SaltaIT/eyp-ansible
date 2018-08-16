@@ -11,7 +11,6 @@ class ansible (
 
   class { '::ansible::install': }
   -> class { '::ansible::config': }
-  ~> class { '::ansible::service': }
   -> Class['::ansible']
 
 }
