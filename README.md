@@ -51,6 +51,11 @@ class { 'ansible': }
 * **host_key_checking**: SSH key host checking (default: false)
 * **retry_files_enabled**: Whether or not when a playbook fails a .retry file shall be created in ~/ (default: false)
 * **log_path**: Log file for ansible (default: '/var/log/ansible.log')
+* **manage_logrotate**: Whether or not to add logrotate config (default: true)
+* **logrotation_ensure**: Controls logrotate configutation files status (default: 'present')
+* **logrotation_frequency**: Logrotation frequency (default: 'daily')
+* **logrotation_size**: Max log size (default: '100M')
+* **logrotation_rotate**: Log retention (default: '30')
 
 ## Limitations
 
