@@ -11,17 +11,17 @@ class ansible::config inherits ansible {
   if($ansible::manage_logrotate)
   {
     logrotate::logs { 'ansible':
-      ensure        => $ansible::logrotation_ensure,
-      log           => [ '/var/log/ansible.log', '/var/log/ansible-summary.log' ],
-      create_mode   => '0644',
-      create_owner  => 'root',
-      create_group  => 'root',
-      frequency     => $ansible::logrotation_frequency,
-      rotate        => $ansible::logrotation_rotate,
-      missingok     => true,
-      notifempty    => true,
-      compress      => true,
-      size          => $ansible::logrotation_size,
-    }  
+      ensure       => $ansible::logrotation_ensure,
+      log          => [ '/var/log/ansible.log', '/var/log/ansible-summary.log' ],
+      create_mode  => '0644',
+      create_owner => 'root',
+      create_group => 'root',
+      frequency    => $ansible::logrotation_frequency,
+      rotate       => $ansible::logrotation_rotate,
+      missingok    => true,
+      notifempty   => true,
+      compress     => true,
+      size         => $ansible::logrotation_size,
+    }
   }
 }
