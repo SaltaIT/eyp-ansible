@@ -56,6 +56,7 @@ class { 'ansible': }
 * **logrotation_frequency**: Logrotation frequency (default: 'daily')
 * **logrotation_size**: Max log size (default: '100M')
 * **logrotation_rotate**: Log retention (default: '30')
+* **command_timeout**: Command timeout (default: '10')
 
 ## Limitations
 

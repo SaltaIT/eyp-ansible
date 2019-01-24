@@ -435,7 +435,7 @@ retry_files_enabled = <%= @retry_files_enabled %>
 # or RPC call before timing out. The value for the command timeout must
 # be less than the value of the persistent connection idle timeout (connect_timeout)
 # The default value is 10 second.
-#command_timeout = 10
+command_timeout = <%= @command_timeout %>
 
 [accelerate]
 #accelerate_port = 5099
