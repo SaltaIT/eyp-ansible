@@ -19,9 +19,7 @@ class ansible::config inherits ansible {
       frequency    => $ansible::logrotation_frequency,
       rotate       => $ansible::logrotation_rotate,
       missingok    => true,
-      notifempty   => true,
       compress     => true,
-      size         => $ansible::logrotation_size,
     }
   }
 }

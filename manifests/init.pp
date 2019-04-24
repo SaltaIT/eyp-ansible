@@ -9,7 +9,6 @@ class ansible (
                 $logrotation_ensure    = 'present',
                 $logrotation_frequency = 'daily',
                 $logrotation_rotate    = '30',
-                $logrotation_size      = '100M',
               ) inherits ansible::params{
 
   validate_re($package_ensure, [ '^present$', '^installed$', '^absent$', '^purged$', '^held$', '^latest$' ], 'Not a supported package_ensure: present/absent/purged/held/latest')
