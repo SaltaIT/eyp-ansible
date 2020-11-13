@@ -1,6 +1,6 @@
 {
   "name": "eyp-ansible",
-  "version": "0.1.3",
+  "version": "1.0.3",
   "author": "Jordi Prats",
   "summary": "ansible basic installation/configuration",
   "license": "Apache-2.0",
