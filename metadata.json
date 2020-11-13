@@ -1,7 +1,7 @@
 {
   "name": "eyp-ansible",
   "version": "0.1.3",
-  "author": "eyp",
+  "author": "Jordi Prats",
   "summary": "ansible basic installation/configuration",
   "license": "Apache-2.0",
   "source": "https://github.com/SaltaIT/eyp-ansible",
